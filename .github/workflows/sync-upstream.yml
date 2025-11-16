@@ -17,7 +17,7 @@ on:
       strategy:
         description: '同步策略: reset (强制使本仓库与 upstream 分支一致)、merge (合并 upstream 到本地)、rebase (将本地重放到 upstream 之后)'
         required: false
-        default: 'rebase'
+        default: 'merge'
 
 env:
   # 请把下面的占位值改成你要同步的上游仓库（owner/repo）
@@ -26,8 +26,8 @@ env:
   TARGET_BRANCH: 'master'
   # 上游默认分支
   UPSTREAM_BRANCH: 'master'
-  # 默认策略：rebase（会 force push）
-  STRATEGY: 'rebase'
+  # 默认策略：merge（会 force push）
+  STRATEGY: 'merge'
 
 jobs:
   sync:
