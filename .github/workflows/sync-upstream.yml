@@ -2,8 +2,8 @@ name: Sync upstream master
 
 on:
   schedule:
-    # UTC cron — 每天 02:00 同步一次（可按需修改）
-    - cron: '0 2 * * *'
+    # UTC cron — 每天 03:00 同步一次（可按需修改）
+    - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
       upstream_repo:
